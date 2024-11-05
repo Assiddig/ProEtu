@@ -1,0 +1,72 @@
+
+
+.video-background {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -100; /* Assure que la vidéo reste en arrière-plan */
+    overflow: hidden;
+}
+  
+video {
+    margin-bottom: -350px;
+    
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 744px;
+    min-height: 1280px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+header {
+    background-color: whitesmoke; /* Une nuance plus foncée de bleu */
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav .btn {
+    background-color: #00B4D8; /* pour les boutons log in et sign up*/
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Bleu plus clair */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Réduction basée sur la hauteur du header */
+}
+
+.info-container {
+    width: 40%;
+    background-color: white; /* pour le block qui contient du texte */
+    margin: 20px;
+    padding: 20px;
+    margin-top: -50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-container a {
+    color: #2F80ED; /* pour le texte besoin d aide */
+}

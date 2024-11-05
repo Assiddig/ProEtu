@@ -1,0 +1,331 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*background-image: url(images/salon1.jpg);*/
+    background-color: rgba(242, 237, 237, 0.1);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    /*background-color: rgba(24, 23, 23, 0.797);  Une nuance plus foncée de bleu */
+    background-color: whitesmoke;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    border-radius: 5px;
+    /*pour garder le header fixe en haut de page*/
+    /*position: fixed; 
+    top: 0;           
+    width: 100%;      
+    z-index: 1000; */
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 496px;
+  }
+  
+  header nav li {
+    margin-right: 50px; 
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    color: black;
+  }
+
+  header nav a:hover {
+    background-color: grey;
+    border-radius: 5px;
+    height: calc(fit-content + 10px);
+    width: calc(fit-content + 10px);
+    padding: 5px;
+  }
+  
+  header nav a.active {
+    color: #999; 
+  }
+
+ .boutonsbleus {
+  display: flex;
+  justify-content: center;
+}
+
+nav .btn {
+    background-color: #00B4D8; /* Bleu clair */
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Bleu plus clair */
+}
+
+
+
+
+
+
+.suggestions {
+  display: none; /* Cache la liste par défaut */
+  position: absolute;
+  background-color: whitesmoke ;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  padding: 10px;
+  width: calc(20% - 20px); /* Assurez-vous que la largeur correspond à celle de votre input */
+  box-sizing: border-box;
+  z-index: 1000; /* Assurez-vous qu'il est au-dessus des autres éléments */
+  border-radius: 5px;
+  opacity: 0.85;
+  margin-top: 60px;
+  
+}
+
+.suggestions.active {
+  display: block; /* Montre les suggestions quand 'active' est ajouté */
+}
+
+.suggestions a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.suggestions a:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+.search-title h2 {
+  text-align: center;
+  margin-bottom: -80px; 
+  font-size: 24px; 
+  font-weight: normal; 
+  color: #333; 
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.search-title h3 {
+  font-size: 20px;
+  color: #666;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke; /* Légère transparence */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 450px;
+    color: black;
+  }
+  
+  .search-input, .location-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-label {
+    color: #888;
+    font-size: 0.8em;
+  }
+  
+  .search-input input, .location-input input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+  }
+  
+  .search-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+
+  }
+
+  .search-error {
+    color: red; /* Ou toute autre couleur souhaitée pour un message d'erreur */
+    display: none; /* Cachez-le par défaut */
+    font-size: 0.8em;
+    margin-top: 0px;
+    margin-bottom: -15px;
+}
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Réduction basée sur la hauteur du header */
+}
+
+
+.info-container {
+    color: white;
+    width: 1000px;
+    background-color: rgba(24, 23, 23, 0.797); /* Légère transparence */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 360px;
+    margin-left: 0px; 
+}
+
+.info-container a {
+    color: whitesmoke;
+}
+
+
+footer {
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 20px 0;
+  font-size: 0.8em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  height: 300px;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+.footer-section ul li a:hover {
+  color: #f1c40f;
+}
+
+.social-media {
+  margin-top: 5px;
+  background-color: gray;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-media i {
+  font-size:xx-large;
+  transition: color 0.3s ease;
+}
+
+.social-media i:hover {
+  color: #f1c40f;
+}
+
+
+
+
+body {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+      opacity: 0;
+  }
+}
+
+
+
+/*pour tous les formulaires qui doivent etre cachés par defaut et qui ont hidden comme class*/
+.hidden {
+  display: none; 
+}
+
+
+
+
+
+/*formulaire création de compte client*/
+
+
+
+
+
+/*choix du compte*/
+
+
+
+
+/*connexion*/

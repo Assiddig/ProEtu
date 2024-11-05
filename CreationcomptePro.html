@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a haircut !</title>
+    <link rel="stylesheet" href="CreationcomptePro.css">
+</head>
+<body>
+    <header>
+        <h1>Get a haircut !</h1>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Coiffeur.html">Coiffeur</a></li>
+                <li><a href="Barbier.html" class="active">Barbier</a></li>  
+                <li><a href="Manucure.html">Manucure</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+        </nav>
+        <nav class="boutonsbleus">
+            <button class="btn" onclick="window.location.href='Connexion.html';" id="btnconnexion">Log In</button>
+            <button class="btn" onclick="window.location.href='Choixdecompte.html';" id="btnchoixdecompte">Sign Up</button>
+        </nav>
+    </header>
+    <main>
+
+        <div class="signup-container">
+            <h1>Créez Votre Compte Salon</h1>
+            <form id="salonSignupForm">
+                <input type="text" id="salonName" placeholder="Nom du Salon" required>
+                <input type="email" id="email" placeholder="Adresse Email" required>
+                <input type="password" id="password" placeholder="Mot de Passe" required>
+                <input type="text" id="salonAddress" placeholder="Adresse du Salon" required>
+                <input type="tel" id="phoneNumber" placeholder="Numéro de Téléphone" required>
+                <textarea id="description" placeholder="Description du Salon"></textarea>
+                <input type="text" id="services" placeholder="Liste des Services" required>
+                <input type="text" id="prices" placeholder="Tarifs" required>
+                <input type="text" id="openingHours" placeholder="Horaires d'Ouverture" required>
+                <input type="text" id="socialMedia" placeholder="Réseaux Sociaux et Site Web">
+                <input type="text" id="bookingPolicy" placeholder="Politique de Réservation et d'Annulation">
+                <input type="text" id="professionalLicense" placeholder="Licence Professionnelle">
+                <!-- Pour les photos et le portfolio, envisagez l'utilisation d'un système de téléchargement de fichiers -->
+                <button type="submit">Créer un compte</button>
+            </form>
+        </div>
+
+    </main>
+    <script src="CreationcomptePro.js"></script>
+</body>
+</html>
+
+
+

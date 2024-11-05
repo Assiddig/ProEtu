@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a haircut !</title>
+    <link rel="stylesheet" href="CreationcompteClient.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+<body>
+    <header>
+        <h1>Get a haircut !</h1>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Coiffeur.html">Coiffeur</a></li>
+                <li><a href="Barbier.html">Barbier</a></li>  
+                <li><a href="Manucure.html">Manucure</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+        </nav>
+        <nav class="boutonsbleus">
+            <button class="btn" onclick="window.location.href='Connexion.html';" id="btnconnexion">Log In</button>
+            <button class="btn" onclick="window.location.href='Choixdecompte.html';" id="btnchoixdecompte">Sign Up</button>
+        </nav>
+    </header>
+    <main>
+<!--
+        <div class="info-container">
+            <p>Cette application Web vous permet de trouver un salon près de chez vous qui propose des services que vous recherchez, elle vous permet également de proposer des services aux clients si vous êtes un professionnel de la coiffure<br> <a href="#">Besoin d'aide?</a></p>
+        </div>
+        -->
+
+        <div id="Creationcompte" class="hidden">
+            <div class="creation-container">
+                <div class="titrecreation">
+                    <h2>Création de compte client</h2>
+                </div>
+                   
+                <form id="createAccountForm">
+                    <label for="civilite" style="color: gray; font-size: 15px; margin-left: 0px; background-color: white;">Civilité</label>
+                    <div class="form-group">
+                        <select id="civilite" name="civilite" style="float:left">
+                            <option value="Monsieur">Monsieur</option>
+                            <option value="Madame">Madame</option>
+                        </select>
+                    </div>
+                     
+                    <input type="text" id="nom" placeholder="Nom" required>
+                    <input type="text" id="prenom" placeholder="Prénom" required>
+                    <input type="text" id="dateNaissance" placeholder="Date de naissance (JJ/MM/AAAA)" required>
+                    <div class="error-message" id="datedenaissanceError"></div>
+       
+                    <select id="indicatif" class="form-controls">
+                        <option>+33</option>
+                        <option>+1</option>
+                        <option>+44</option>
+                    </select>
+       
+                    <input type="tel" class="form-control" id="NumeroTelephone" placeholder="Ex: 7 07 08 09 10" required>
+                    <div class="error-message" id="number_error"></div>
+                
+                    <input type="email" id="email" placeholder="Adresse mail" style="width: calc(100% - 30px); padding: 15px; margin: 10px 0;border: 1px solid #ccc; border-radius: 5px;" required>
+                    <div class="error-message" id="emailError"></div>
+                   
+                    <div class="oeilpassword">
+                        <button type="button" id="togglePassword" style="cursor: pointer;">👁️</button>
+                    </div>
+                    <input type="password" id="password" placeholder="Mot de passe" style="width: calc(100% - 30px); padding: 15px; margin: 10px 0;border: 1px solid #ccc; border-radius: 5px;" required>
+                    <div class="error-message" id="passwordError"></div>
+                
+                    <button type="submit">Créer un compte</button>
+                    <p id="successMsg" class="success-msg">Félicitation! Votre compte a été créé avec succès.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script src="CreationcompteClient.js"></script>
+</body>
+</html>

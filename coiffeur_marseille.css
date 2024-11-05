@@ -1,0 +1,186 @@
+header {
+    background-color:whitesmoke; /* Une nuance plus foncée de bleu */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 510px;
+  }
+  
+  header nav li {
+    margin-right: 50px; 
+  }
+  
+  header nav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    background-color: grey;
+    border-radius: 5px;
+    height: calc(fit-content + 10px);
+    width: calc(fit-content + 10px);
+    padding: 5px;
+  }
+  
+  header nav a.active {
+    color: #999; 
+  }
+
+ .boutonsbleus {
+  display: flex;
+  justify-content: center;
+}
+
+nav .btn {
+    background-color: #00B4D8; /* Bleu clair */
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Bleu plus clair */
+}
+
+#salon-list .salon-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.salon-image {
+    width: 120px;
+    height: 80px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.salon-details {
+    flex-grow: 1;
+}
+
+.salon-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.salon-rating {
+    color: gold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.salon-timing {
+    color: #666;
+    font-size: 14px;
+}
+
+
+.book-appointment-button {
+    margin-top: -20px; /* Espacement au-dessus du bouton */
+    padding: 8px 10px; /* Ajustez la taille du bouton */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Bordures arrondies */
+    cursor: pointer; /* Change le curseur pour indiquer la cliquabilité */
+    margin-left: 1100px;
+    padding: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.book-appointment-button:hover {
+    background-color: #bbc3cb; /* Couleur de fond au survol */
+}
+
+
+footer {
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    font-size: 0.8em;
+    margin-top: 100px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    height: 300px;
+  }
+  
+  .footer-section h3, .footer-section h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.5em;
+    margin: 0px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f1c40f;
+  }
+  
+  .social-media {
+    margin-top: 5px;
+    background-color: gray;
+    border-radius: 5px;
+    width: max-content;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .social-media i {
+    font-size:xx-large;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media i:hover {
+    color: #f1c40f;
+  }
+
+  

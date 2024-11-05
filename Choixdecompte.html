@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a haircut !</title>
+    <link rel="stylesheet" href="Choixdecompte.css">
+</head>
+<body>
+    <header>
+        <h1>Get a haircut !</h1>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Coiffeur.html">Coiffeur</a></li>
+                <li><a href="Barbier.html" >Barbier</a></li>  
+                <li><a href="Manucure.html">Manucure</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+        </nav>
+        <nav class="boutonsbleus">
+            <button class="btn" onclick="window.location.href='Connexion.html';" id="btnconnexion">Log In</button>
+            <button class="btn" onclick="window.location.href='Choixdecompte.html';" id="btnchoixdecompte">Sign Up</button>
+        </nav>
+    </header>
+    <main>
+        <!--<div class="info-container">
+            <p>Cette application Web vous permet de trouver un salon près de chez vous qui propose des services que vous recherchez, elle vous permet également de proposer des services aux clients si vous êtes un professionnel de la coiffure<br> <a href="#">Besoin d'aide?</a></p>
+        </div>
+    -->
+
+        <div id="Choixdecompte" class="form-container hidden">
+            <div class="choice-block">
+                <p>Je suis un professionnel et je souhaite inscrire mon etablissement</p>
+                <button class="btnCC" onclick="window.location.href='CreationcomptePro.html';">Créer un Compte Pro</button>
+            </div>
+            <div class="choice-block">
+                <p>Je suis un client, je recherche un salon de coiffure.</p>
+                <button class="btnCC" onclick="window.location.href='CreationcompteClient.html'; ">Créer un Compte Client</button>
+            </div>
+        </div>
+    </main>
+    <script src="Choixdecompte.js"></script>
+</body>
+</html>
+

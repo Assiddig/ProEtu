@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a haircut !</title>
+    <link rel="stylesheet" href="Connexion.css">
+</head>
+<body>
+    <header>
+        <h1>Get a haircut !</h1>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Coiffeur.html">Coiffeur</a></li>
+                <li><a href="Barbier.html">Barbier</a></li>  
+                <li><a href="Manucure.html">Manucure</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+        </nav>
+        <nav class="boutonsbleus">
+            <button class="btn" id="btnconnexion">Log In</button>
+            <button class="btn" onclick="window.location.href='Choixdecompte.html';" id="btnchoixdecompte">Sign Up</button>
+        </nav>
+    </header>
+    <main>
+        <!--
+        <div class="info-container">
+            <p>Cette application Web vous permet de trouver un salon près de chez vous qui propose des services que vous recherchez, elle vous permet également de proposer des services aux clients si vous êtes un professionnel de la coiffure<br> <a href="#">Besoin d'aide?</a></p>
+        </div>
+        -->
+
+
+        <div id="Connexion" class="block">
+            <div class="login-container">
+                <form id="loginForm">
+                    <h2 style="margin-left: 80px; margin-top: 5px;">Connectez-vous</h2>
+                    <input type="email" id="emails" placeholder="Adresse mail" required>
+                    <input type="password" id="passwords" placeholder="Mot de passe" required>
+                    <div class="proposition">
+                    <p><a href="passwordoublie.html">Mot de passe oublié ?</a>
+                    vous êtes nouveau? <a href="Choixdecompte.html">S'inscrire</a></p>
+                    <p id="error-msg" class="error-msg">Adresse mail ou mot de passe invalide</p>
+                    </div>
+                    <button class="btnconnexion" type="submit">Se connecter</button>       
+                </form>
+            </div>
+        </div>
+
+        
+
+    </main>
+    <script src="Accueil.js"></script>
+</body>
+</html>

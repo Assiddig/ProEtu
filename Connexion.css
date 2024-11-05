@@ -1,0 +1,182 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*background-image: url(images/fondfond.webp);*/
+    background-color: whitesmoke;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: whitesmoke; /* Une nuance plus foncée de bleu */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 510px;
+  }
+  
+  header nav li {
+    margin-right: 50px; 
+  }
+  
+  header nav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    background-color: grey;
+    border-radius: 5px;
+    height: calc(fit-content + 10px);
+    width: calc(fit-content + 10px);
+    padding: 5px;
+  }
+  
+  header nav a.active {
+    color: #999; 
+  }
+
+ .boutonsbleus {
+  display: flex;
+  justify-content: center;
+}
+
+nav .btn {
+    background-color: #00B4D8; /* Bleu clair */
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Bleu plus clair */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Réduction basée sur la hauteur du header */
+}
+
+.info-container {
+    color: white;
+    width: 1000px;
+    background-color: rgba(24, 23, 23, 0.797); /* Légère transparence */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 360px;
+    margin-left: 0px;
+}
+
+.info-container a {
+    color: whitesmoke;
+}
+
+
+
+
+
+
+/*connexion*/
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border-radius: 10px;
+    /*background-color: rgba(24, 23, 23, 0.797);*/
+    opacity: 0.9;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    color: black;
+  }
+  
+  .block {
+    height: 280px;
+    width: 350px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    opacity: 0.9;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  
+  .proposition{
+    font-size: small;
+    margin-left: 21px;
+  }
+  
+  input[type=email], input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .btnconnexion {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    margin-left: 95px;
+    background-color: #2F80ED; /* Bleu */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  
+  button:hover {
+    background-color: #56CCF2; /* Bleu clair */
+  }
+  
+  a {
+    color: #2F80ED; /* Bleu */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-msg {
+    color: red;
+    display: none; /* Masqué par défaut, affiché via JS si nécessaire */
+  }
+  
+  
+  

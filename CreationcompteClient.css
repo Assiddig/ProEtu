@@ -1,0 +1,226 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*background-image: url(images/fondfond.webp);*/
+    background-color: whitesmoke;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: whitesmoke; /* Une nuance plus foncée de bleu */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 510px;
+  }
+  
+  header nav li {
+    margin-right: 50px; 
+  }
+  
+  header nav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    background-color: grey;
+    border-radius: 5px;
+    height: calc(fit-content + 10px);
+    width: calc(fit-content + 10px);
+    padding: 5px;
+  }
+  
+  header nav a.active {
+    color: #999; 
+  }
+
+ .boutonsbleus {
+  display: flex;
+  justify-content: center;
+}
+
+nav .btn {
+    background-color: #00B4D8; /* Bleu clair */
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Bleu plus clair */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Réduction basée sur la hauteur du header */
+}
+
+
+.info-container {
+    color: white;
+    width: 1000px;
+    background-color: rgba(24, 23, 23, 0.797); /* Légère transparence */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 360px;
+    margin-left: 0px;
+}
+
+.info-container a {
+    color: whitesmoke;
+}
+
+#civilite {
+    float: left;
+    width: 100px;
+    margin-left: 65px;
+    margin-top: -18px;
+    border-radius: 4px;
+    border-color: #ccc;
+  }
+  
+  .form-controls{ /*pour les options de numero*/
+    border-color: gray ;
+    border-width: 1px;
+    border-radius: 5px;
+    color: gray;
+    margin-left: 0px;
+    margin-right: 40px;
+    align-items: center;
+  }
+  
+  .form-control{
+    margin-left: -30px;
+    border-radius: 5px;
+    margin-right: 30px;
+    border-width: 0.5px;
+    border-color: #999;
+  }
+  
+  
+  .titrecreation {
+    color: black;
+    margin-left: 0px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: -20px;
+  }
+  
+  
+  
+  .creation-container {
+    width: 300px; /* Adapté pour la création de compte */
+    margin: 50px auto; /* Centrer le bloc sur la page */
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 8 0px;
+    margin-left: 40px; /*pour centrer le texte de bienvenue*/
+    opacity: 0.8;
+    margin-bottom: 10px;
+  }
+  
+  
+  input[type=text] {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: calc(100%);
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #2F80ED; /* Bleu */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #56CCF2; /* Bleu clair */
+  }
+  
+  .success-msg {
+    color: green;
+    display: none; /* Masqué par défaut, affiché via JS si nécessaire */
+  }
+  
+  .error-msg {
+    color: red;
+    margin: 5px 0;
+    display: none; /* Masqué par défaut, affiché via JS si nécessaire */
+  }
+  
+  
+  .oeilpassword {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 315px;
+  }
+  
+  
+  
+  #togglePassword {
+    position: absolute;
+    right: 10px;
+    left: -55px;
+    margin-top: 75px;
+    border: none;
+    background: none;
+    font-size: 18px;
+  }
+  
+  .error-message {
+    color: red;
+    background-color: #ffcccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    display: none; /* Masqué par défaut */
+    font-size: 0.8rem;
+  }
+  
+
+  
+  
+  
+  
+  

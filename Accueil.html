@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a haircut !</title>
+    <link rel="stylesheet" href="Accueil.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+<body>
+    <header>
+        <h1>Get a haircut !</h1>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html" class="active">Accueil</a></li>
+                <li><a href="Coiffeur.html">Coiffeur</a></li>
+                <li><a href="Barbier.html" >Barbier</a></li>  
+                <li><a href="Manucure.html">Manucure</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+        </nav>
+        <nav class="boutonsbleus">
+            <button class="btn" onclick="window.location.href='Connexion.html';" id="btnconnexion">Log In</button>
+            <button class="btn" onclick="window.location.href='Choixdecompte.html';" id="btnchoixdecompte">Sign Up</button>
+        </nav>
+    </header>
+    <div class="search-title">
+        <h2>Réserver en douceur</h2>
+        <h3>simple . rapide . 24h/24h</h3>
+    </div>
+    <main>
+        <div class="search-bar">
+            <div class="search-input">
+                <div class="search-label">Que cherchez-vous?</div>
+                <input type="text" id="searchInput" placeholder="Coiffeurs, type de Coiffeurs" autocomplete="off">
+                <div id="searchError" class="search-error"></div>
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+            
+            <div class="location-input">
+                <div class="search-label">Où?</div>
+                <input type="text" id="locationInput" placeholder="Ville, Adresse"> 
+            </div>
+            <button type="button" class="search-button" id="searchButton">Rechercher</button>
+        </div>
+        <!--
+        <div class="info-container">
+            <p>Cette application Web vous permet de trouver un salon près de chez vous qui propose des services que vous recherchez, elle vous permet également de proposer des services aux clients si vous êtes un professionnel de la coiffure<br> <a href="#">Besoin d'aide?</a></p>
+        </div>
+        -->
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Suivez nous</h2>
+                <div class="social-media">
+                    <a href="RIEN POUR LE MOMENT" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="RIEN POUR LE MOMENT" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="RIEN POUR LE MOMENT" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>À propos de Get a haircut</h2>
+                <ul>
+                    <li><a href="Choixdecompte.html">Ajoutez votre établissement</a></li>
+                    <li><a href="RIEN POUR LE MOMENT">Rejoignez-nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Trouvez votre prestation</h2>
+                <ul>
+                    <li><a href="Coiffeur.html">Coiffeur</a></li>
+                    <li><a href="Beaute.html">Manucure</a></li>
+                    <li><a href="Barbier.html">Barbier</a></li>
+                </ul>
+    </footer>
+    <script src="Accueil.js"></script>
+</body>
+</html>

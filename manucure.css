@@ -1,0 +1,287 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(242, 237, 237, 0.1); /* Ajusté pour correspondre à la nouvelle couleur de fond */
+    color: whitesmoke; /* La couleur du texte est ajustée pour correspondre */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: whitesmoke; /* Ajusté pour une couleur de fond blanche */
+    color: black; /* La couleur du texte dans le header est maintenant noire */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 510px; /* Ajustez selon le besoin */
+}
+
+header nav li {
+    margin-right: 40px;
+}
+
+header nav a {
+    color: black; /* La couleur des liens est ajustée pour correspondre */
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: grey; /* Couleur de survol ajustée */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header nav a.active {
+    color: #999; /* Couleur des liens actifs ajustée */
+}
+
+nav .btn {
+    background-color: #00B4D8; /* Couleur du bouton inchangée */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Couleur de survol inchangée */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Assurez-vous que la hauteur est ajustée si le header change */
+}
+
+.search-title h2 {
+    text-align: center;
+    margin-bottom: -80px; 
+    font-size: 24px; 
+    font-weight: normal; 
+    color: #333; 
+    margin-top: 100px;
+    font-size: 48px;
+  }
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke; /* Ajusté pour correspondre */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 300px; /* Ajustez selon le besoin */
+}
+
+
+  
+  .search-input, .location-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-label {
+    color: #888;
+    font-size: 0.8em;
+  }
+  
+  .search-input input, .location-input input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 400px;
+  }
+  
+  .search-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+
+  }
+
+  .search-error {
+    color: red; /* Ou toute autre couleur souhaitée pour un message d'erreur */
+    display: none; /* Cachez-le par défaut */
+    font-size: 0.8em;
+    margin-top: 0px;
+    margin-bottom: -15px;
+}
+
+
+
+
+.city-gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -310px;
+}
+
+.city-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.city-card {
+  width: calc(30.333% + 15px); 
+  margin-right: 10px;
+  margin-left: 15px; 
+  text-align: center;
+  font-size: 1em; 
+  cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.city-card:hover {
+  transform: scale(1.05); /* Légèrement plus grand sur hover */
+}
+
+.city-card:last-child {
+  margin-right: 0; /* retire le margin pour le last card de la ligne */
+}
+
+.city-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  object-fit: cover;
+}
+
+.city-card p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Add media queries for responsiveness if necessary */
+@media (max-width: 768px) {
+  .city-row {
+      flex-direction: column;
+  }
+
+  .city-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+footer {
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 20px 0;
+  font-size: 0.8em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  height: 300px;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+.footer-section ul li a:hover {
+  color: #f1c40f;
+}
+
+.social-media {
+  margin-top: 5px;
+  background-color: gray;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-media i {
+  font-size:xx-large;
+  transition: color 0.3s ease;
+}
+
+.social-media i:hover {
+  color: #f1c40f;
+}
+
+
+
+
+body {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+      opacity: 0;
+  }
+}
+
+
+
+
+  

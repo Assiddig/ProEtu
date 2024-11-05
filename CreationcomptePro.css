@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: rgba(24, 23, 23, 0.797); /* Une nuance plus foncée de bleu */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 510px;
+  }
+  
+  header nav li {
+    margin-right: 50px; 
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    background-color: grey;
+    border-radius: 5px;
+    height: calc(fit-content + 10px);
+    width: calc(fit-content + 10px);
+    padding: 5px;
+  }
+  
+  header nav a.active {
+    color: #999; 
+  }
+
+ .boutonsbleus {
+  display: flex;
+  justify-content: center;
+}
+
+nav .btn {
+    background-color: #00B4D8; /* Bleu clair */
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0.8;
+}
+
+nav .btn:hover {
+    background-color: #90E0EF; /* Bleu plus clair */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Réduction basée sur la hauteur du header */
+}
+
+
+.signup-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
